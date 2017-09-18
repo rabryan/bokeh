@@ -389,8 +389,8 @@ export class PlotCanvasView extends DOMView
     # the scroll-zoom tool maintains its focus position. Disabling the next
     # two lines would result in a more "gliding" behavior, allowing one to
     # zoom out more smoothly, at the cost of losing the focus position.
-    if is_scrolling and hit_bound
-      return
+    #if is_scrolling and hit_bound
+    #  return
 
     for [rng, range_info] in range_info_iter
       rng.have_updated_interactively = true
